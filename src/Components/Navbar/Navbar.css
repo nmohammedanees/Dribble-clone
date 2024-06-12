@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 4px;
+  padding: 5px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  height: 80px;
+  background-color: #fff;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  padding-right: 150px;
+  width: 740px;
+  padding-right: 100px;
+}
+.nav-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-left: 32px;
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+/* .logo h2 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0;
+} */
+
+.nav-links > li {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.dropdown li {
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-links > li:hover .dropdown {
+  display: block;
+}
+
+.logo img {
+  height: 88px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 28%;
+  color: #4a4a4a;
+}
+
+.navbar-search-icon {
+  height: 16px;
+  position: absolute;
+  padding-left: 10px;
+}
+
+.navbar-search-bar {
+  display: flex;
+  align-items: center;
+}
+.navbar-search-input {
+  height: 10px;
+  width: 120px;
+  padding: 10px 40px;
+  border-radius: 50px;
+  border:none;
+}
+
+.navbar-search-input:focus {
+  box-shadow: 0 0 10px 2px rgba(250, 163, 255, 0.7);
+  outline:none;
+  border:pink;
+  /* border:none; */
+
+}
+.navbar-right h3 {
+  margin: 0;
+}
+
+.navbar-right button {
+  padding: 8px 16px;
+  background-color: #ff7a59;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
+  .navbar-left ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .navbar-left ul.open {
+    display: flex;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+}

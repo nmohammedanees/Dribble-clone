@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+/* @import url("components/card.css"); */
+
+
+.card-body {
+    background: none;
+    padding: 0px;
+    /* border-radius: 5px; */
+    /* box-shadow: 1px 1px 2px #B3B3B3; */
+  }
+  .card-picture {
+    height: 190px;
+    width:300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 30px;
+  }
+  .card-likes {
+    color: #B3B3B3;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 7px;
+    display: flex;
+    justify-content:space-between;
+  }
+  .card-likes img{
+    padding-right: 5px;;
+  }
+  /* .card-likes ul{
+    display: flex;
+    justify-content: space-between;
+  } */
+
+  .card-likes li {
+    padding: 0 5px;
+  }
+  .card-likes i {
+    padding-right: 5px;
+  }
+  .card-profile {
+    display: flex;
+    align-items: center;
+    /* padding: 10px 0; */
+  }
+  .card-profile img {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .card-profile a {
+    color: #3a8bbb;
+    font-weight: bold;
+  }
+  .card-hover {
+    padding: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 10px;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius:30px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background: linear-gradient(0deg,rgba(39,38,42,1) 0%, rgba(255,255,255,0)     60%);
+  }
+  .card-hover-icons{
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+  .card-hover h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    color:white;
+  }
+  .carddyy{
+    background-color: white;
+    border-radius: 50%;
+  }
+  .card-hover svg{
+    height:15px;
+    /* background-color: white; */
+    /* border:10px solid white;     */
+    /* border-radius: 30%; */
+    margin: 10px;
+    /* padding: 10px; */
+  }
+  .card-hover p {
+    font-weight: lighter;
+    color: #AAAAAA;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  .card:hover {
+    cursor: pointer;
+  }
+  .card-picture:hover .card-hover {
+    opacity: 1;
+  }
+
+  body {
+    font-family: "Open Sans", "Helvetica", "sans-serif";
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none; 
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .card-list-inline {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+  }
+  .card-list-inline li {
+    display: inline-block;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 0 0 32%;
+  }
+  
