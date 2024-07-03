@@ -6,7 +6,6 @@ import Menu from './Components/Menu/Menu';
 import Cardlist from './Components/Cardlist/Cardlist';
 import data from './Components/data/data.json';
 import Footer from './Components/Footer/Footer';
-// import Dribbble from './Components/Dribble/Dribbble';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -40,21 +39,23 @@ function App() {
       });
     }
 
+
+    
     setFilteredData(filtered);
     console.log('Filtered data:', filtered);
   }, [searchTerm, sortOption, category,tagsearch]);
 
   return (
-    <Router>
+    //<Router>
       <div className="App">
         <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Menu setSortOption={setSortOption} sortOption={sortOption} category={category} setCategory={setCategory} tagsearch={tagsearch} setTagsearch={setTagsearch} />
         <Cardlist data={filteredData} />
-        <Footer/>
-        
+        <Footer/>        
         </div>
-    </Router>
   );
+      // </Router>
+
 }
 
 export default App;

@@ -5,7 +5,7 @@ import { FaChevronDown } from "react-icons/fa";
 const Menu = ({ sortOption, setSortOption,category,setCategory,tagsearch,setTagsearch }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showFilterDropdown, setShowFilterDropdown] = useState(false);
-
+  
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
@@ -22,8 +22,6 @@ const Menu = ({ sortOption, setSortOption,category,setCategory,tagsearch,setTags
     setTagsearch(event.target.value);
   };
 
-
-
   return (
     <div>
       <div className="menu-container">
@@ -36,7 +34,7 @@ const Menu = ({ sortOption, setSortOption,category,setCategory,tagsearch,setTags
               <a onClick={() => handleOptionClick("Following")}>Following</a>
               <a onClick={() => handleOptionClick("Popular")}>Popular</a>
               <a onClick={() => handleOptionClick("NoteWorthy")}>
-                Noteworthy
+                NoteWorthy
               </a>
             </div>
           )}
@@ -57,6 +55,7 @@ const Menu = ({ sortOption, setSortOption,category,setCategory,tagsearch,setTags
 
         <button className="filter-button" onClick={toggleFilterDropdown}>
           Filters
+          <FaChevronDown className="menu-dropdown-icon" />
         </button>
       </div>
       <div className={`filter-dropdown ${showFilterDropdown ? 'show' : ''}`}>

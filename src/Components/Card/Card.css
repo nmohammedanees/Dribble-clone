@@ -6,7 +6,6 @@
     background: none;
     padding: 0px;
     max-width: 300px;
-    /* box-shadow: 1px 1px 2px #B3B3B3; */
   }
   .card-picture {
     height: 190px;
@@ -72,6 +71,7 @@
     display: flex;
     align-items: center;
     gap:10px;
+    color:grey;
   }
   .card-hover h4 {
     margin-bottom: 10px;
@@ -84,12 +84,8 @@
     border-radius: 50%;
   }
   .card-hover svg{
-    height:15px;
-    /* background-color: white; */
-    /* border:10px solid white;     */
-    margin: 10px;
-    /* padding: 10px; */
-    /* background-color: red; */
+    height:13px;
+    margin: 7px 7px 5px 7px;
   }
   .card-hover p {
     font-weight: lighter;

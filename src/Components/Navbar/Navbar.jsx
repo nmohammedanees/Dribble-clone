@@ -10,7 +10,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
   const toggleCourses = () => setCoursesOpen(!isCoursesOpen);
 
   const [inputValue, setInputValue] = useState('');
-
+  
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };

@@ -1,17 +1,16 @@
 ::selection {
-    background-color: bisque; /* Change this to your desired color */
-    color: white; /* Optional: change the text color */
+    background-color: bisque; 
+    
   }
   
-  /* For WebKit browsers (Safari, Chrome) */
   ::-webkit-selection {
-    background-color: bisque; /* Change this to your desired color */
-    color: white; /* Optional: change the text color */
+    background-color: bisque; 
+    color: white; 
   }
   img{
-    -webkit-user-select: none;  /* Safari */
-    -moz-user-select: none;     /* Firefox */
-    -ms-user-select: none;      /* Internet Explorer/Edge */
-    user-select: none;          /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
-
+    -webkit-user-select: none;
+    -moz-user-select: none;     
+    -ms-user-select: none;     
+    user-select: none; 
   }
+  
